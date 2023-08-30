@@ -20,7 +20,7 @@ F2 = F1 / (N / 2)
 F2[0] = F2[0] / 2
 for i in range(0, N):
     if (abs(F2[i]) > 0.25):
-        print('%d is %d', i, abs(F2[i]))
+        print('频率%d处的幅度为%.1f' %(i, abs(F2[i])))
 
 # 根据DFT公式原理实现的DFT计算，做了/N的标准化
 F3 = np.zeros(N, dtype=complex)  # F[n]
